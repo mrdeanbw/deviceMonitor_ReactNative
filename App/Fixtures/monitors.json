@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "objectId": "xPF5GsMyYC",
+      "createdAt": "2016-11-14T18:59:30.207Z",
+      "updatedAt": "2016-11-15T17:13:43.504Z",
+      "invitationText": "",
+      "inviter": "lU3UUSCziq",
+      "status": "accepted",
+      "invitee": "+18885555512",
+      "address": "zeCKmyYkMy"
+    },
+    {
+      "objectId": "tqcfkJx1TE",
+      "createdAt": "2016-11-14T19:32:36.995Z",
+      "updatedAt": "2016-11-14T19:32:59.869Z",
+      "inviter": "lU3UUSCziq",
+      "status": "accepted",
+      "address": "zeCKmyYkMy",
+      "invitee": "+18675309"
+    },
+    {
+      "objectId": "Fq7BiJ8bUY",
+      "createdAt": "2016-11-15T18:42:07.771Z",
+      "updatedAt": "2016-11-15T18:42:34.523Z",
+      "invitee": "+15555228243",
+      "address": "zeCKmyYkMy",
+      "inviter": "lU3UUSCziq",
+      "status": "accepted"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "results": [
+    {
+      "ACL": {
+        "beef": {
+          "read": true,
+          "write": true
+        }
+      },
+      "batteryLevel": null,
+      "batteryPower": 3,
+      "createdAt": "2016-10-03T23:08:18.777Z",
+      "deviceType": "Battery",
+      "event": "check in",
+      "isAlarmOn": false,
+      "isProvisioned": true,
+      "isSnoozed": false,
+      "isTesting": false,
+      "lastEvent": "check in",
+      "lastEventTime": {
+        "__type": "Date",
+        "iso": "2016-10-03T23:08:18.777Z"
+      },
+      "location": "Hallway",
+      "name": "Smart Battery",
+      "objectId": "foo",
+      "offlineEmailSent": false,
+      "offlinePushSent": false,
+      "otaAttempts": 0,
+      "owner": {
+        "__type": "Pointer",
+        "className": "_User",
+        "objectId": "beef"
+      },
+      "pAddress": {
+        "__type": "Pointer",
+        "className": "_Address",
+        "objectId": "asdf"
+      },
+      "priority": 90,
+      "rssi": 0,
+      "sensorDetails": {
+        "__type": "Pointer",
+        "className": "SensorDetails",
+        "objectId": "nlg9WC451D"
+      },
+      "updatedAt": "2016-10-03T23:08:18.777Z"
+    }
+  ]
+}

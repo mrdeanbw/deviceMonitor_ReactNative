@@ -1,0 +1,23 @@
+{
+    "results": [
+        {
+            "ACL": {
+                "*": {
+                    "read": true
+                },
+                "chwbGhbTzC": {
+                    "write": true
+                }
+            },
+            "address": "Home",
+            "createdAt": "2016-09-28T18:59:50.394Z",
+            "objectId": "0BzaZ1Rg66",
+            "owner": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": "chwbGhbTzC"
+            },
+            "updatedAt": "2016-09-28T18:59:50.394Z"
+        }
+    ]
+}

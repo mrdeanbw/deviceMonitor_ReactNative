@@ -1,0 +1,81 @@
+[
+    {
+        "emailAddresses": [
+            {
+                "email": "John-Appleseed@mac.com",
+                "label": "work"
+            }
+        ],
+        "familyName": "Appleseed",
+        "givenName": "John",
+        "phoneNumbers": [
+            {
+                "label": "mobile",
+                "number": "888-555-5512"
+            },
+            {
+                "label": "home",
+                "number": "888-555-1212"
+            }
+        ],
+        "recordID": 3,
+        "thumbnailPath": "cool-photo.png"
+    },
+    {
+        "emailAddresses": [
+            {
+                "email": "anna-haro@mac.com",
+                "label": "home"
+            }
+        ],
+        "familyName": "Haro",
+        "givenName": "Anna",
+        "phoneNumbers": [
+            {
+                "label": "home",
+                "number": "555-522-8243"
+            }
+        ],
+        "recordID": 4,
+        "thumbnailPath": ""
+    },
+    {
+        "emailAddresses": [
+            {
+                "email": "d-higgins@mac.com",
+                "label": "home"
+            }
+        ],
+        "familyName": "Higgins",
+        "givenName": "Daniel",
+        "phoneNumbers": [
+            {
+                "label": "home",
+                "number": "555-478-7672"
+            },
+            {
+                "label": "mobile",
+                "number": "(408) 555-5270"
+            },
+            {
+                "label": "home fax",
+                "number": "(408) 555-3514"
+            }
+        ],
+        "recordID": 2,
+        "thumbnailPath": ""
+    },
+    {
+        "emailAddresses": [
+            {
+                "email": "nonumber@mac.com",
+                "label": "home"
+            }
+        ],
+        "familyName": "No",
+        "givenName": "Number",
+        "phoneNumbers": [],
+        "recordID": 6,
+        "thumbnailPath": ""
+    }
+]

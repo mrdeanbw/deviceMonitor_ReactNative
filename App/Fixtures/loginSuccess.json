@@ -1,0 +1,22 @@
+{
+    "ACL": {
+        "*": {
+            "read": true
+        },
+        "zUWsSB7QXb": {
+            "read": true,
+            "write": true
+        }
+    },
+    "counter": 3,
+    "createdAt": "2016-09-12T13:46:59.892Z",
+    "email": "Patrick@promptworks.com",
+    "email_l": "patrick@promptworks.com",
+    "name": "Patrick Smith",
+    "objectId": "zUWsSB7QXb",
+    "phoneNumber": "+12153531169",
+    "sessionToken": "r:c4076adcd287c760bbfa38d4ee3117d8",
+    "updatedAt": "2016-09-15T14:00:28.513Z",
+    "userChannel": "rzUWsSB7QXb",
+    "username": "+12153531169"
+}

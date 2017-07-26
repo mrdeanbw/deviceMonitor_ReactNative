@@ -1,0 +1,11 @@
+git_url "https://github.com/promptworks/promptworks-mobile-certs"
+git_branch "roost"
+
+type "development" # The default type, can be: appstore, adhoc or development
+
+app_identifier "com.roost.app-dev"
+team_id "4B84P95Y5H"
+username "<YourAppleID>" # Your Apple Developer Portal username
+
+# For all available options run `match --help`
+# Remove the # in the beginning of the line to enable the other options

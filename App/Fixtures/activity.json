@@ -1,0 +1,35 @@
+{
+    "results": [
+        {
+            "ACL": {
+                "lU3UUSCziq": {
+                    "read": true,
+                    "write": true
+                },
+                "role:OlauePMqxS": {
+                    "read": true
+                }
+            },
+            "createdAt": "2016-10-18T14:56:30.880Z",
+            "event": "Smart Battery now connected",
+            "eventResult": 1,
+            "eventType": 1,
+            "firmwareRevision": "0.0.1",
+            "macAddress": "DE:AD:BE:EF:00:00",
+            "name": "Wine",
+            "objectId": "NjCGFPnYDi",
+            "owner": {
+                "__type": "Pointer",
+                "className": "_User",
+                "objectId": "lU3UUSCziq"
+            },
+            "sensor": {
+                "__type": "Pointer",
+                "className": "Sensor",
+                "objectId": "OlauePMqxS"
+            },
+            "ssid": "apple00472",
+            "updatedAt": "2016-10-18T14:56:30.880Z"
+        }
+    ]
+}

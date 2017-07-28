@@ -41,8 +41,6 @@ buck-out/
 android/app/libs
 android/keystores/debug.keystore
 
-# app configuration
-.env
 
 # fastlane
 fastlane/report.xml

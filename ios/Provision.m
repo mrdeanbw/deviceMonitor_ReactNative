@@ -14,6 +14,7 @@
 #import "Provision.h"
 #import <zlib.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "RCTLog.h"
 
 // Change these to alter the provisioning file
 #define SAMPLE_RATE         44100.          // Output file sample rate
@@ -23,24 +24,29 @@
 #define CHIRP_STOP          (3150+1200)     // Frequency to end chirp sweep at in Hz
 #define CHIRP_LENGTH        0.008           // Length of chirp in seconds
 #define PREAMBLE            0xC2492492      // Message preamble
-#define CRYPTO_BUFSIZ       4096
-#define COUNTRY_CODE        16707           //Canada WiFi country code
-#define VERSION_NUM         1
-
+#define CRYPTO_BUFSIZ 4096
 
 @implementation Provision
-// Instantiate and generate provisioning chirp file this way:
-// Provision *provision = [[Provision alloc] initWithSSID:SSID password:password objectID:objectID];
-// NSURL *filePath = [provision generate];
-- (instancetype)initWithSSID:(NSString *)SSID password:(NSString *)password objectID:(NSString *)objectID
+
+RCT_EXPORT_MODULE();
+
+RCT_EXPORT_METHOD(generateChirp:(NSString *)SSID password:(NSString *)password objectID:(NSString *)objectID countryCode:(int)countryCode versionNum:(int)versionNum callback:(RCTResponseSenderBlock)callback)
 {
+
+  RCTLogInfo(@"network: %@, pass: %@, objId: %@, country: %d, version: %d", SSID, password, objectID, countryCode, versionNum);
+  Provision *provision = [[Provision alloc] initWithSSID:SSID password:password objectID:objectID countryCode:countryCode versionNum:versionNum];
+  NSURL *filePath = [provision generate];
+  callback(@[[NSNull null], [filePath path]]);
+}
+
+- (instancetype)initWithSSID:(NSString *)SSID password:(NSString *)password objectID:(NSString *)objectID countryCode:(int)countryCode versionNum:(int)versionNum {
     self = [self init];
     if (self) {
         self.SSID = SSID;
         self.password = password;
         self.objectID = objectID;
-        self.countryCode = COUNTRY_CODE;
-        self.versionNum = VERSION_NUM;
+        self.countryCode = countryCode;
+        self.versionNum = versionNum;
     }
     return self;
 }

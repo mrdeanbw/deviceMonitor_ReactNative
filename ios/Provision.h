@@ -13,12 +13,15 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "RCTBridgeModule.h"
 
 @interface Provision : NSObject <RCTBridgeModule>
 
 @property (nonatomic, copy) NSString *SSID;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *objectID;
+@property (nonatomic) int countryCode;
+@property (nonatomic) int versionNum;
 
 @property (nonatomic) BOOL verbose;
 

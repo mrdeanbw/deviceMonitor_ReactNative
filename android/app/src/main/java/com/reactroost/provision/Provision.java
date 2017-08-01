@@ -16,6 +16,8 @@ package com.reactroost.provision;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.CRC32;
+import android.util.Log;
+import java.io.*;
 
 public class Provision {
 
@@ -28,12 +30,12 @@ public class Provision {
     private static final int CHIRP_STOP = (3150 + 1200);         // Frequency to end chirp sweep at in Hz
     private static final double CHIRP_LENGTH = 0.008;            // Length of chirp in seconds
     private static final int PREAMBLE = 0xC2492492;              // Message preamble
-    private static final int COUNTRY_CODE = 16707;              // Canada WiFi Country Code
-    private static final int VERSION_NUM = 1;
 
     private String ssid;
     private String password;
     private String objectId;
+    private int country;
+    private int versionNum;
 
     public static final String SSID = "SSID";
     public static final String PASSWORD = "password";
@@ -65,12 +67,12 @@ public class Provision {
     // sample.write(shortArray, 0, shortArray.length);
     // sample.play();
 
-    public Provision(String ssid, String password, String objectId) {
+    public Provision(String ssid, String password, String objectId, int country, int versionNum) {
         this.ssid = ssid;
         this.password = password;
         this.objectId = objectId;
-        this.country = COUNTRY_CODE;
-        this.versionNum = VERSION_NUM;
+        this.country = country;
+        this.versionNum = versionNum;
     }
 
     public void genBit(int bit, List<Short> buffer) {
